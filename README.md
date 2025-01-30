@@ -41,4 +41,14 @@ Esse processo foi repetido para cada palavra do documento.
 
 Após a rotulação, o arquivo pôde ser baixado no formato .tsv acessando "Arquivo" > "Baixar" > "Valores Separados por Tabulações", gerando o arquivo palavras_IOB.tsv.
 
+### 3. Criação do modelo NER
+
+Com o arquivo palavras_IOB.tsv, foi possível treinar e criar um modelo de reconhecimento de entidades nomeadas para os textos jurídicos. 
+No arquivo *NPL_Reconhecimento_de_entidades_em_documentos.ipynb* é possivel visualizar todo o processo de desenvolvimento do modelo, bem como um teste realizado a partir de um texto externo (texto_teste.txt).
+
+O resultado final do modelo já treinado foi compactado em um arquivo zip (modelo.zip) para que seja possível desenvolver outras aplicações de modo mais prático.
+
+### 4. Aplicação Streamlit
+
+Para que seja mais viável o uso da aplicação pela empresa de advocacia, foi criado uma aplicação streamlit a partir do modelo desenvolvido. Essa aplicação está disponível no arquivo app.py.
 
